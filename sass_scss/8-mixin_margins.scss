@@ -1,0 +1,10 @@
+@mixin new($x){
+    margin-left: $x;
+    margin-right: $x;
+}
+body {
+    @include new(10px);
+}
+div {
+    @include new(15px);
+}
