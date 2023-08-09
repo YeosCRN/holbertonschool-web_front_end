@@ -1,0 +1,14 @@
+@mixin new($x) {
+    color: $x;
+}
+.info{
+    font-size: 12px;
+}
+.success {
+    @include new(#00FF00);
+    @extend .info;
+}
+.warning {
+    @include new(#FF0000);
+    @extend .info;
+}
